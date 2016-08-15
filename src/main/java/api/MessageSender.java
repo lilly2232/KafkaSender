@@ -27,6 +27,8 @@ public class MessageSender {
     public boolean send(String topic, String message){
 
 
+
+
         //메모리큐에 인큐한다
 
         //리턴한다.

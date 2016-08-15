@@ -1,26 +1,24 @@
 package queue;
 
 
-import java.util.HashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Created by 1002718 on 2016. 8. 15..
  */
 public class MemoryQueue {
-    LinkedBlockingQueue<HashMap<String,String>> queue;
+    LinkedBlockingQueue<String> queue;
 
 
     public MemoryQueue(){
-        queue=new LinkedBlockingQueue<HashMap<String,String>>();
+        queue=new LinkedBlockingQueue<String>();
     }
 
-    public boolean enqueue(){
-        return true;
+    public boolean enqueue(String data){
+        return queue.add(data);
     }
-    public boolean dequeue(){
-
-        return false;
+    public String dequeue(){
+        return queue.remove();
     }
 
 }
