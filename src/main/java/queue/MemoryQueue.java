@@ -21,4 +21,11 @@ public class MemoryQueue {
         return queue.remove();
     }
 
+    public int size(){
+        return queue.size();
+    }
+
+    public void close(){
+
+    }
 }

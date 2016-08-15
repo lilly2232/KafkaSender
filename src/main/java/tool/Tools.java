@@ -14,10 +14,4 @@ public class Tools {
         jsonObj.put("message",message);
         return jsonObj.toString();
     }
-
-    public static String jsonToString(String json){
-
-        return "";
-    }
-
 }
